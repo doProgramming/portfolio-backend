@@ -1,0 +1,108 @@
+<html>
+<head>
+</head>
+<body style="max-width: 100%">
+<div class="col-md-7  sticky" >
+
+  <button class="btn-lg btn-primary" (click)="scroll(homediv)">Home </button>
+  <button class="btn-lg btn-primary"(click)="scroll(projectdiv)">Projects </button>
+  <button class="btn-lg btn-primary"(click)="scroll(portfoliodiv)">Portfolio </button>
+  <button class="btn-lg btn-primary"(click)="scroll(contactdiv)">Contact </button>
+  <button class="btn-lg btn-primary"(click)="scroll(travellerdiv)">Traveller </button>
+
+</div>
+<div #homediv class="homeImage">
+  <div>
+      <br>
+
+    Hi,
+    <br>
+    <h2 class="line-1 anim-typewriter positionTextFirstPage">Well helloo :) , I'm Lestra and  I am a full stack Java developer. :)</h2>
+  </div>
+</div>
+
+<div #projectdiv class="travellerImage">
+  <br><br>
+  <div class="text"><h1>Projects:</h1>
+    <ul>
+    <p>I have worked on a various types of projects. <br>Some of them are:</p>
+      <ol>
+    <br>
+    <p>- Enterprise management system for American company Vectrus</p>
+    <p>- Enterprise management system for Kuwait Oil Company</p>
+    <p>- Desktop and web application for Ministry of Electricity and Water in Kuwait</p>
+    <p>- Website sportingbet - Java developer in mobile API team</p>
+    <p>- Web application and remote IoT hardware</p>
+    <p>- Web and desktop Applications for analysing professional poker games</p>
+    <p>- Website for company Jelkom-Solar</p>
+    <p>- Website for Teretanac gym</p>
+    <p>- E-commerce website</p>
+    <p>- Website for company I-TAXI</p>
+      </ol>
+    </ul>
+  </div>
+</div>
+<div #portfoliodiv class="aboutImage">
+<h2 class="svetlucavo">
+  <br><br><br>
+  <p>Well product for the second time :). <br>
+    Let me introduce my self in a few sentences.
+    I'm 27 years old Msc engineer in IT. Currently living in a capital city of Serbia where I was also born. <br>
+    I find my self as a full stack Jave developer with capability of multitasking.<br>
+    In early age I already was good in solving complex problems. I enjoy developing and creating something new.<br>
+    Big fan of exotic places, sea, nature, sport in general, smart people, brainstorming, complex algorithms etc.<br>
+    Open mined with desire of learning new stuff and explore new things<br>.
+  </p><br>
+  <br>
+
+</h2>
+
+</div>
+<div #contactdiv class="contactImage">
+  <br>
+  <div class="row col-md-12">
+  <div class="form-group form-group-sm col-md-4">
+    <br><br><br><h2><p>Contact me</p></h2>
+<br>
+    Full stack:
+    <br>
+  <p class="col-md-12 masking">Java</p>
+  <p class="col-md-12 masking">REST</p>
+  <p class="col-md-9 masking">Spring</p>
+  <p class="col-md-4 masking">Hibernate</p>
+
+    <p class="col-md-12 masking">Angular</p>
+    <p class="col-md-9 masking">HTML</p>
+    <p class="col-md-4 masking">Bootstrap</p>
+
+    <p class="col-md-12 masking">Postgresql</p>
+    <p class="col-md-12 masking">SQL</p>
+    <p class="col-md-12 masking">MySQL</p>
+
+    <p class="col-md-12 masking">JBOSS</p>
+    <p class="col-md-12 masking">TomCat</p>
+    <p class="col-md-12 masking">WebLogic</p>
+    <p class="col-md-9 masking">Websphere</p>
+      </div>
+<div class="form-group form-group-sm col-md-18">
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <form [formGroup]="inputData"  (submit)="saveLink()" novalidate class="validation-colors">
+    <h4>If you need a developer who knows any or all of this technologies, you are on the right place.
+      <br> Please fill the form and I will contact you in a short time</h4>
+    First name: <input type="text"  formControlName="firstname">
+    Last name: <input type="text" formControlName="lastname">
+    E-mail: <input type="text" formControlName="email">
+    <button type="submit" [disabled]="!isValid()">save</button>
+<p>Or contact me on:
+</p><a class="java" href="https://www.linkedin.com/in/itpupin/"></a>
+  </form>
+</div>
+  </div>
+</div>
+<!--
+<div #travellerdiv class="portfolioImage">
+</div>
+-->
+</body>
+</html>
+

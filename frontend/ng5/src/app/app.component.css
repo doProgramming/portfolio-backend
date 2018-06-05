@@ -1,0 +1,65 @@
+.portfolioImage {
+  background-image: url(../assets/forest.jpeg);
+  max-width: 100%;
+  min-height: 100%;
+}
+.homeImage {
+  background-image: url(../assets/office.jpg);
+  max-width: 100%;
+  min-height: 100%;
+}
+.aboutImage {
+  background-image: url(../assets/dubai.jpeg);
+  max-width: 100%;
+  min-height: 100%;
+}
+.contactImage {
+  background-image: url(../assets/code.jpg);
+  max-width: 100%;
+  min-height: 100%;
+}
+.projectsImage {
+  background-image: url(../assets/windows.jpeg);
+  max-width: 100%;
+  min-height: 100%;
+}
+.travellerImage {
+  background-image: url(../assets/train-grass.jpg);
+  max-width: 100%;
+  min-height: 100%;
+}
+.text{
+  font-family: "Apple Color Emoji";
+  font-size: 27px;
+  color: azure;
+}
+.linkedinImage{
+  background-image: url(../assets/linkedin.jpg);
+  width: 206px;
+  height: 206px;
+  min-width: 100%;
+}
+
+.validation-colors .ng-valid:not(form) > input,
+.validation-colors .ng-valid:not(form) > .lookup-input-group > input,
+.validation-colors .ng-valid:not(form) > .datepicker-input-group > input,
+.validation-colors .ng-valid:not(form) > select,
+.validation-colors .ng-valid:not(form) > textarea,
+.validation-colors select.ng-valid,
+.validation-colors textarea.ng-valid,
+.validation-colors input.ng-valid {
+  border-left: 4px solid #42A948;
+}
+
+.validation-colors .ng-invalid:not(form) > input,
+.validation-colors .ng-invalid:not(form) > .lookup-input-group > input,
+.validation-colors .ng-invalid:not(form) > .datepicker-input-group > input,
+.validation-colors .ng-invalid:not(form) > select,
+.validation-colors .ng-invalid:not(form) > textarea,
+.validation-colors select.ng-invalid,
+.validation-colors textarea.ng-invalid,
+.validation-colors input.ng-invalid {
+  border-left: 4px solid #a94442;
+}
+
+
