@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import product.IoT.dto.Relay;
 import product.IoT.impl.ReleyImpl;
-import product.service.ScheduledWebParserService;
+import product.parsingweb.service.ScheduledWebParserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

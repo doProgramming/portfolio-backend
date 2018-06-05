@@ -1,4 +1,4 @@
-package product.parsingweb;
+package product.parsingweb.connection;
 
 import org.jsoup.nodes.Document;
 
