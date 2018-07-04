@@ -1,6 +1,6 @@
 package product.portfoliosite.user;
 
-import product.IoT.impl.ReleyImpl;
+import product.IoT.reley.impl.ReleyImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

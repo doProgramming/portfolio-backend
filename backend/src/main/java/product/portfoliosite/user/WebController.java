@@ -2,8 +2,8 @@ package product.portfoliosite.user;
 import java.io.IOException;
 import java.util.concurrent.atomic.AtomicLong;
 
-import product.IoT.dto.Relay;
-import product.IoT.impl.ReleyImpl;
+import product.IoT.reley.dto.Relay;
+import product.IoT.reley.impl.ReleyImpl;
 import product.parsingweb.service.ScheduledWebParserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
