@@ -8,10 +8,20 @@
   <button class="btn-lg btn-primary"(click)="scroll(projectdiv)">Projects </button>
   <button class="btn-lg btn-primary"(click)="scroll(portfoliodiv)">Portfolio </button>
   <button class="btn-lg btn-primary"(click)="scroll(contactdiv)">Contact </button>
-  <button class="btn-lg btn-primary"(click)="scroll(travellerdiv)">Traveller </button>
+  <!--<button class="btn-lg btn-primary"(click)="scroll(travellerdiv)">Traveller </button>-->
 
 </div>
 <div #homediv class="homeImage">
+  <form [formGroup]="inputData"  (submit)="loginAdmin()" novalidate class="validation-colors">
+  <div align="right">
+    <br><br>
+    username: <input type="text" formControlName="username">
+    <br>
+    password: <input type="password" formControlName="password">
+    <br>
+    <button type="submit" onclick="loginAdmin()">Login</button>
+  </div>
+  </form>
   <div>
       <br>
 
@@ -43,9 +53,10 @@
   </div>
 </div>
 <div #portfoliodiv class="aboutImage">
-<h2 class="svetlucavo">
+<!--<h2 class="svetlucavo">-->
+  <h5>
   <br><br><br>
-  <p>Well product for the second time :). <br>
+  <p> <br>
     Let me introduce my self in a few sentences.
     I'm 27 years old Msc engineer in IT. Currently living in a capital city of Serbia where I was also born. <br>
     I find my self as a full stack Jave developer with capability of multitasking.<br>
@@ -55,7 +66,7 @@
   </p><br>
   <br>
 
-</h2>
+</h5>
 
 </div>
 <div #contactdiv class="contactImage">
