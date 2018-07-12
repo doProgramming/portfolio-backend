@@ -6,7 +6,7 @@
 
   <button class="btn-lg btn-primary" (click)="scroll(homediv)">Home </button>
   <button class="btn-lg btn-primary"(click)="scroll(projectdiv)">Projects </button>
-  <button class="btn-lg btn-primary"(click)="scroll(portfoliodiv)">Portfolio </button>
+  <!--<button class="btn-lg btn-primary"(click)="scroll(portfoliodiv)">Portfolio </button>-->
   <button class="btn-lg btn-primary"(click)="scroll(contactdiv)">Contact </button>
   <!--<button class="btn-lg btn-primary"(click)="scroll(travellerdiv)">Traveller </button>-->
 
@@ -52,23 +52,23 @@
     </ul>
   </div>
 </div>
-<div #portfoliodiv class="aboutImage">
-<!--<h2 class="svetlucavo">-->
-  <h5>
-  <br><br><br>
-  <p> <br>
-    Let me introduce my self in a few sentences.
-    I'm 27 years old Msc engineer in IT. Currently living in a capital city of Serbia where I was also born. <br>
-    I find my self as a full stack Jave developer with capability of multitasking.<br>
-    In early age I already was good in solving complex problems. I enjoy developing and creating something new.<br>
-    Big fan of exotic places, sea, nature, sport in general, smart people, brainstorming, complex algorithms etc.<br>
-    Open mined with desire of learning new stuff and explore new things<br>.
-  </p><br>
-  <br>
+<!--<div #portfoliodiv class="aboutImage">-->
+<!--&lt;!&ndash;<h2 class="svetlucavo">&ndash;&gt;-->
+  <!--<h5>-->
+  <!--<br>-->
+  <!--<p> <br>-->
+    <!--Let me introduce my self in a few sentences.-->
+    <!--I'm 27 years old Msc engineer in IT. Currently living in a <a href="https://goo.gl/maps/uhHudrCmCe62">capital city</a>  of Serbia where I was also born. <br>-->
+    <!--I find my self as a full stack Jave developer with capability of multitasking.<br>-->
+    <!--In early age I already was good in solving complex problems. I enjoy developing and creating something new.<br>-->
+    <!--Big fan of exotic places, sea, nature, sport in general, smart people, brainstorming, complex algorithms etc.<br>-->
+    <!--Open mined with desire of learning new stuff and explore new things<br>.-->
+  <!--</p><br>-->
+  <!--<br>-->
 
-</h5>
+<!--</h5>-->
 
-</div>
+<!--</div>-->
 <div #contactdiv class="contactImage">
   <br>
   <div class="row col-md-12">
@@ -104,7 +104,7 @@
     Last name: <input type="text" formControlName="lastname">
     E-mail: <input type="text" formControlName="email">
     <button type="submit" [disabled]="!isValid()">save</button>
-<p>Or contact me on:
+<p>Or contact me on: <b>petrovicstrahinja@yahoo.com</b>
 </p><a class="java" href="https://www.linkedin.com/in/itpupin/"></a>
   </form>
 </div>

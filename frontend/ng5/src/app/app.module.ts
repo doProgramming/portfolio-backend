@@ -3,6 +3,11 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { LoggerModule, Options, Level } from 'simple-angular-logger';
+
+export function loggerOptions(): Options {
+    return { level: Level.LOG };
+}
 
 @NgModule({
   declarations:[
@@ -11,7 +16,9 @@ import {HttpClientModule} from '@angular/common/http';
   imports:[
     BrowserModule,
     FormsModule,
-    HttpClientModule, ReactiveFormsModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    LoggerModule.forRoot(loggerOptions),
   ],
   providers:[AppComponent],
   bootstrap:[AppComponent]

@@ -1,7 +1,9 @@
 package product.portfoliosite.user.service.impl;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import product.portfoliosite.user.dto.UserDTO;
 import product.portfoliosite.user.entity.User;
+import product.portfoliosite.user.service.Entity;
 import product.portfoliosite.user.service.UserService;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -14,12 +16,13 @@ import org.springframework.stereotype.Component;
  * **/
 
 @Component
-public class UserServiceImpl implements UserService {
+@Qualifier(value = "User")
+public class UserServiceImpl implements UserService,Entity {
 
     private SessionFactory sessionFactory = null;
 
     @Override
-    public void saveUser(User user){
+    public void saveEntity(Object user){
         Session session = createSessino();
         session.beginTransaction();
         session.save(user);

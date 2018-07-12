@@ -24,7 +24,7 @@ public class UserController {
     public void save(@RequestParam(value = "firstname") String firstname,@RequestParam(value = "lastname") String lastname,
                      @RequestParam(value = "email")String email){
         User user = createUser(firstname,lastname,email);
-        persistenceService.saveUser(user);
+        persistenceService.saveEntity(user);
     }
     @RequestMapping(value = "/update" , produces = "application/json; charset=UTF-8", method = RequestMethod.GET)
     public void update(@RequestParam(value = "id") int id,@RequestParam(value = "firstname") String firstname,@RequestParam(value = "lastname") String lastname,
